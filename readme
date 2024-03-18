@@ -1,0 +1,3 @@
+For this project we used that concpets of a pizza and it's delivery to make a pizza program that where the PizzaOrder class is an extension of the Pizza class. I used a lot of coding fundementals including 
+constructors and the super() functionality, for creativity I added a few features, 1: I added Jcheckboxes to represent topping choices. 2: I added a Jcheck box that if selected activates a j text box. 
+All in all I belive that this is a solid program that can be built off of.
