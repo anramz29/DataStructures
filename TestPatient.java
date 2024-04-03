@@ -4,18 +4,19 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 
-public class TestPatient extends JFrame{
+public class TestPatient extends JFrame {
     // initialize all components
     private JTextField idTextField, ageTextField, bloodTypeTextField, rhFactorTextField;
     private JLabel infoLabel, warningLabel;
     private Patient defaultPatient, userPatient, customBloodPatient;
 
 
-    TestPatient(){
+    TestPatient() {
         PatientGUI();
         setSize(300, 500);
     }
-    private void PatientGUI(){
+
+    private void PatientGUI() {
         // very similar to create gui method in TestBloodData
         setTitle("Patient Information");
         // again using GridBagLayout
@@ -71,6 +72,7 @@ public class TestPatient extends JFrame{
         });
 
     }
+
     private void enterData() {
         warningLabel.setText(""); // clear warnings for diff iterations
 
@@ -97,21 +99,15 @@ public class TestPatient extends JFrame{
                     defaultPatient.getIdNumber(), defaultPatient.getAge(), defaultPatient.getBloodData().getBloodType(), defaultPatient.getBloodData().getRhFactor(),
                     userPatient.getIdNumber(), userPatient.getAge(), userPatient.getBloodData().getBloodType(), userPatient.getBloodData().getRhFactor(),
                     customBloodPatient.getIdNumber(), customBloodPatient.getAge(), customBloodPatient.getBloodData().getBloodType(), customBloodPatient.getBloodData().getRhFactor()));
-        // catch if ID and age are not integers
+            // catch if ID and age are not integers
         } catch (NumberFormatException ex) {
             warningLabel.setText("ID and Age must be Integers.");
-        // catch all other issues
+            // catch all other issues
         } catch (IllegalArgumentException ex) {
             warningLabel.setText("Invalid Blood Type or RhFactor.");
         }
 
-        // Ensure updates are shown
-        warningLabel.revalidate();
-        warningLabel.repaint();
-        infoLabel.revalidate();
-        infoLabel.repaint();
     }
-
 }
 
 

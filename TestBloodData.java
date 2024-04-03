@@ -94,6 +94,7 @@ public class TestBloodData extends JFrame {
             BloodData newBloodData = new BloodData(chosenBloodType, chosenRhFactor);
 
             // Update the responseLabel instead of creating a new panel, call both constructors
+            // documentation used: https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html
             responseLabel.setText("<html>Default Blood Type: " + bloodData.getBloodType() +
                     "<br>Default Rh Factor: " + bloodData.getRhFactor() +
                     "<br>Selected Blood Type: " + newBloodData.getBloodType() +
