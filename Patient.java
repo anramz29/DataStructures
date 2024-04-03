@@ -8,7 +8,7 @@ public class Patient {
     public Patient() {
         this.idNumber = 0;
         this.age = 0;
-        this.bloodData = bloodData;
+        this.bloodData = new BloodData();
     }
     //Overload constructor
     public Patient(int idNumber, int age, BloodData bloodData) {
