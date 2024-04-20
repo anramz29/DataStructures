@@ -1,3 +1,6 @@
 # DataStructures 
 
 This is the Main Repo for all my Data Structures
+
+
+For creativty I decided to implment a GUI for my linked list without working with a partner. At first it felt like a pretty daungting task but now I can very well understand how Data Structure of a linked list and how I can use it for practical applications. In addition, I used a lot of try catch blocks for error handeling, use several types of layouts that allowed me to custom design the gui so that it is as intuitive as possible to use.
