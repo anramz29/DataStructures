@@ -1,0 +1,1 @@
+For my Wedding Project I didn't add too much creativity but instead I use a lot of exceptions and try catch blocks to imporve functionaility. For example, I used a try catch block to ensure that all fields had been filled out. In addition I also used the java.time library for the date field with a try catch exception so that the user has to put in the correct date format. 
